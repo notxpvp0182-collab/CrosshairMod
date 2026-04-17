@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "dynamiccrosshair",
+  "version": "${version}",
+  "name": "Dynamic Crosshair",
+  "description": "Client-side mod: crosshair changes color/shape when targeting entities, hitboxes highlight green/red.",
+  "authors": ["notxpvp"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.dynamiccrosshair.DynamicCrosshairMod"]
+  },
+  "mixins": [
+    "dynamiccrosshair.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "fabric-api": "*",
+    "minecraft": "~1.21.10",
+    "java": ">=21"
+  }
+}
